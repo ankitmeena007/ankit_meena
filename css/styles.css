@@ -22,7 +22,7 @@ p{
 }
 
 hr{
-  background-color: inherit;
+
   opacity: 1;
 }
 
@@ -33,10 +33,10 @@ h1, h2, h3, h4, h5, h6 {
 h1{
 
 
-  margin:0px auto 35px auto ;
+  margin:0px auto 0px auto ;
   /* top right bottom left */
   font-family: 'Sacramento', cursive;
-  font-size: 5rem; /* as 100% is 16 pixels and also 1 em is 16 pixels .
+  font-size: 6.5rem; /* as 100% is 16 pixels and also 1 em is 16 pixels .
    rem is same as em except it does not get affected by parent setting for example building on top of body setting*/
   font-weight: 900;
   color:white;
@@ -87,6 +87,7 @@ a:hover{
 
 
 
+
    /* default is serif */
 }
 
@@ -101,18 +102,34 @@ a:hover{
   padding: 50px 0 10px 0;
 }
 
-.top_cloud {
+.wrapper-t{
   position: absolute;
+  margin-left: 70%;
+  top:10%;
+}
+.wrapper-b{
+  position: absolute;
+  margin-left: 20%;
+  top:60%;
+}
+
+.top_cloud {
+  /* position: absolute;
   right:300px;
-  top:50px;
+  top:50px; */
+  position: absolute;
+  left: 0;
+  top: 0;
 
 }
 
 .bottom_cloud_1 {
-  position:absolute;
+  /* position:absolute;
   left:350px;
-  bottom:300px;
-
+  top:400px; */
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .bottom_cloud_2 {
@@ -121,6 +138,7 @@ a:hover{
   top:50px;
   display:none;
 }
+
 
 
 .skill-row {
@@ -136,28 +154,25 @@ a:hover{
   font-weight:normal;
 }
 
-.footer-link-l {
+.footer-link{
   color:white;
+  position: relative;
+}
+
+.l {
   right: 4%;
-  position: relative;
 }
 
-.footer-link-t {
-  color:white;
+.t {
   right:1%;
-  position: relative;
 }
 
-.footer-link-w {
-  color:white;
+.w {
   left:1%;
-  position: relative;
 }
 
-.footer-link-n {
-  color:white;
+.n {
   left:4%;
-  position: relative;
 }
 
 
@@ -186,10 +201,11 @@ a:hover{
 
 .contact_message {
   width:50%;
-  margin: 50px auto 50px auto ;
+  margin: 3em auto 2em auto ;
 }
 
 .top_hr {
+  background-color: inherit;
   border:dotted #39A9CB 10px;
   border-bottom: none;
   width: 5%;
@@ -207,6 +223,7 @@ a:hover{
 
 .the-inquisitive-div{
   background-color: #FFC947;
+
 }
 
 .hobbies-divs{
@@ -248,7 +265,7 @@ a:hover{
   background-image: linear-gradient(to bottom, #FFC947,#FFC947 );
   text-decoration: none;
 }
-//#3498db
+/* #3498db */
 
 @media (max-width:1300px) {
   .web-development {
@@ -267,10 +284,7 @@ a:hover{
     width:45%;
     height:auto;
   }
-  .the-inquisitive{
-    width:40%;
-    height:auto;
-  }
+
 
   .contact_image{
     width:12%;
@@ -280,14 +294,55 @@ a:hover{
 
 @media (max-width:1000px){
   .contact_image{
-    width:20%;
+    width:25%;
     height:auto;
   }
-}
-
-@media (max-width:768px){
-.the-inquisitive{
-  width:60%;
-  height:auto;
-}
+  .the-inquisitive{
+    width:55%;
+    height:auto;
+  }
+  body,.opening_line, h3, h4, h5, h6, p{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 3.5rem;
+  }
+  .contact_message{
+    width:75%;
+  }
+  .btn{
+    font-size: 30px;
+  }
+  .footer-link{
+    font-size: 2rem;
+  }
+  .copyright{
+    font-size: 1.5rem;
+  }
+  /* .top-box{
+    height:100vh;
+  } */
+  /* .wrapper-m{
+    position: absolute;
+    margin-left: 20%;
+    bottom:0%;
+  }
+  .mountain_img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  } */
+  /* .intro{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom:50%;
+  }
+  h1{
+    font-size: 10rem;
+  }
+  .opening_line{
+    font-size: 3rem;
+  } */
 }
