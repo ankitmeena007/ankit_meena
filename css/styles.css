@@ -256,6 +256,13 @@ a:hover{
   text-decoration: none;
 }
 
+.IJ{
+  background: #656565;
+  font-size: 20px;
+}
+
+
+
 .btn:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #FFC947, #FFC947);
@@ -266,6 +273,10 @@ a:hover{
   text-decoration: none;
 }
 /* #3498db */
+
+.IJ:hover{
+  background: #11c8de;
+}
 
 @media (max-width:1300px) {
   .web-development {
