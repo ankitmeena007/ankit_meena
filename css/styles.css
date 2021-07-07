@@ -13,6 +13,7 @@ body{
   font-family: 'Space Grotesk', sans-serif;
   color:#40514E;
   font-size: 1.2rem;
+  /* background-color: white; */
 }
 
 p{
@@ -70,6 +71,40 @@ a:hover{
 }
 
 
+input[type="text"], textarea {
+
+  /* background-color :#FDB827 ; */
+
+  border-color: #39A9CB;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: center;
+
+}
+
+input[type="text"]::placeholder{
+  text-align: center;
+  color:#39A9CB;
+}
+
+input[type="text"]:-ms-input-placeholder{
+  text-align: center;
+}
+
+
+.search{
+text-align: center;
+margin:0;
+
+}
+
+.inp{
+  /* background-color: white  */
+}
+#myBtn{
+  display: none;
+}
+
 /*----------------------class--------------*/
 
 .top-box {
@@ -84,6 +119,9 @@ a:hover{
   position: relative;
   padding-top: 185px;
 
+  /* position: sticky;
+  top:0;
+  z-index: -1; */
 
 
 
@@ -94,12 +132,15 @@ a:hover{
 .middle-box {
   position: relative;
   margin: 100px 0px 0px ;
+  /* background-color: white; */
 
 }
 
 .bottom-box {
   background-color:#39A9CB /*DFEEEA*/;
-  padding: 50px 0 10px 0;
+  padding: 35px 0 10px 0;
+  /* put padding top as 50px along with 0 10 0 when to do removed */
+
 }
 
 .wrapper-t{
@@ -275,7 +316,7 @@ a:hover{
 /* #3498db */
 
 .IJ:hover{
-  background: #11c8de;
+  background: #FFC947;
 }
 
 @media (max-width:1300px) {
@@ -356,4 +397,13 @@ a:hover{
   .opening_line{
     font-size: 3rem;
   } */
+
+  input[type="text"], textarea {
+
+
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+
+
+  }
 }
