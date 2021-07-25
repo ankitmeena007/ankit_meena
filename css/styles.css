@@ -682,7 +682,10 @@ margin:0;
     font-size: 1.5rem;
   }
   .box{
-    display: none;
+    /* display: none; */
+    left:0;
+    top:0;
+    transform: translate(-12%,0);
   }
   /* .top-box{
     height:100vh;
