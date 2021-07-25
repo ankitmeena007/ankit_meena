@@ -647,9 +647,7 @@ margin:0;
     width:12%;
     height:auto;
   }
-  .box{
-    display: none;
-  }
+  
 }
 
 @media (max-width:1000px){
@@ -678,6 +676,9 @@ margin:0;
   }
   .copyright{
     font-size: 1.5rem;
+  }
+  .box{
+    display: none;
   }
   /* .top-box{
     height:100vh;
