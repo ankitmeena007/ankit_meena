@@ -647,7 +647,11 @@ margin:0;
     width:12%;
     height:auto;
   }
-  
+  .box{
+    /* top:70%; */
+    right:-15%;
+  }
+
 }
 
 @media (max-width:1000px){
