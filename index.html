@@ -1,115 +1,226 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Ankit Meena</title>
+
+<head>
+  <meta charset="utf-8">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>Ankit Meena</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+  </style>
 
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- font awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- font awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sacramento&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="top-box">
-      <div class="wrapper-t">
-        <img class="top_cloud" src="images/cloud.png" alt="cloud image">
-      </div>
-      <div class="intro">
-        <h1>I'am Ankit.</h1>
-        <p class="opening_line">a developer by hobby.</p>
-      </div>
-      <div class="wrapper-b">
-        <img class="bottom_cloud_1" src="images/cloud.png" alt="cloud image">
-      </div>
-      <div class="wrapper-m">
-        <img class="mountain_img" src="images/mountain.png" alt="mountain image">
-      </div>
-      <img class="bottom_cloud_2" src="images/cloud.png" alt="cloud image">
-    </div>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sacramento&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+</head>
 
-    <div class="middle-box" >
+<body>
 
-      <div class="profile">
-        <img class="profile_pic" src="images/Hi-transparent.png" alt="sorry, couldn't load image">
-        <h2>Hi</h2>
-        <p>I'm a Student at <a href="https://home.iitd.ac.in/" target="_blank">IIT Delhi.</a> <br> I love exploring and learning new things.</p>
-      </div>
-
-      <hr class="top_hr">
+  <script>
+    var pageX = $(document).width();
+    var pageY = $(document).height();
+    var mouseY = 0;
+    var mouseX = 0;
 
 
-        <h2>My Hobbies</h2>
 
-        <div class="skill-row">
-          <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
-             <!-- <img class="stargazing" src="images/stargazing.png" alt="stargazing icon"> -->
-            <img class="stargazing" src="images/giphy.gif" alt="stargazing icon">
+    $(document).mousemove(function(event) {
+      //verticalAxis
+      mouseY = event.pageY;
+      yAxis = ((pageY / 2 - mouseY) / pageY) * 300;
+      //horizontalAxis
+      mouseX = event.pageX / -pageX;
+      xAxis = -mouseX * 100 - 100;
+
+      $(".box__ghost-eyes").css({
+        transform: "translate(" + xAxis + "%,-" + yAxis + "%)"
+      });
+
+      //console.log('X: ' + xAxis);
+    });
+  </script>
+
+
+
+  <div id=TOP class="top-box">
+
+
+        <div class="box" onclick="location.href='https://ankitmeena007.github.io/ankit_meena/';">
+
+          <div class="box__ghost">
+            <div class="symbol"></div>
+            <div class="symbol"></div>
+            <div class="symbol"></div>
+            <div class="symbol"></div>
+            <div class="symbol"></div>
+            <div class="symbol"></div>
+
+            <div class="box__ghost-container">
+              <div class="box__ghost-eyes">
+                <div class="box__eye-left"></div>
+                <div class="box__eye-right"></div>
+              </div>
+              <div class="box__ghost-bottom">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="box__ghost-shadow"></div>
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
-            <h3>Stargazing</h3>
-            <h4> <b>**Peace**</b> </h4>
 
-          </div>
+          <div class="box__description">
+            <!-- <div class="box__description-container"> -->
+              <!-- <div class="box__description-title">Have a good day</div> -->
+              <!-- <div class="box__description-text"></div> -->
+            <!-- </div> -->
 
-          <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
-            <img class="web-development" src="images/webdev.png" alt="Web dev icon">
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
-            <h3>Web Development</h3>
-
-          </div>
-
-          <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
-            <img class="football" src="images/football.png" alt="football icon">
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
-            <h3>Football [Soccer :\]</h3>
+            <!-- <a href="#TOP" class="box__button">Back to Top</a> -->
 
           </div>
 
         </div>
 
 
-      </div>
 
-      <div class="the-inquisitive-div">
-        <a href="https://salty-fortress-40086.herokuapp.com/" target="_blank"><img class="mb-4 the-inquisitive" src="images/Logo.gif" alt="" width="72" height="57"></a>
 
-      </div>
 
-      <a class="btn IJ" href="https://stormy-waters-89239.herokuapp.com/" target="_blank"><i class="fas fa-sign-in-alt fa-1x"></i> THE INQUISITIVE JOURNAL</a>
-      <!-- https://inquisitive-blogger.herokuapp.com/ -->
-      <div class="contact-me">
-        <a class="btnn" href="mailto:meenaankit393@gmail.com">        <img class="contact_image" src="images/contact.jpeg" alt="contact image">
- </a>
-        <!-- <img class="contact_image" src="images/contact.jpeg" alt="contact image"> -->
-        <h2>Get in Touch</h2>
-        <h3>( especially if you're a SH fan :p )</h3>
-        <p class="contact_message">If you want to discuss football or talk about astronomy or just fancy saying hey, then do consider getting in touch.</p>
-        <a class="btn" href="mailto:meenaankit393@gmail.com">MESSAGE ME</a>
-      </div>
+
+
+
+    <div class="wrapper-t">
+      <img class="top_cloud" src="images/cloud.png" alt="cloud image">
     </div>
-    <br>
-    <div class="bottom-box" >
-      <a class="footer-link l" href="https://www.linkedin.com/in/ankit-meena-007
+    <div class="intro">
+      <h1>I'am Ankit.</h1>
+      <p class="opening_line">a developer by hobby.</p>
+    </div>
+    <div class="wrapper-b">
+      <img class="bottom_cloud_1" src="images/cloud.png" alt="cloud image">
+    </div>
+    <div class="wrapper-m">
+      <img class="mountain_img" src="images/mountain.png" alt="mountain image">
+    </div>
+    <img class="bottom_cloud_2" src="images/cloud.png" alt="cloud image">
+  </div>
+
+  <div class="middle-box">
+
+    <div class="profile">
+      <img class="profile_pic" src="images/Hi-transparent.png" alt="sorry, couldn't load image">
+      <h2>Hi</h2>
+      <p>I'm a Student at <a href="https://home.iitd.ac.in/" target="_blank">IIT Delhi.</a> <br> I love exploring and learning new things.</p>
+    </div>
+
+    <hr class="top_hr">
+
+
+    <h2>My Hobbies</h2>
+
+    <div class="skill-row">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
+          <!-- <img class="stargazing" src="images/stargazing.png" alt="stargazing icon"> -->
+          <img class="stargazing" src="images/giphy.gif" alt="stargazing icon">
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
+          <h3>Stargazing</h3>
+          <h4> <b>**Peace**</b> </h4>
+
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
+          <img class="web-development" src="images/webdev.png" alt="Web dev icon">
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
+          <h3>Web Development</h3>
+
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
+          <img class="football" src="images/football.png" alt="football icon">
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 hobbies-divs">
+          <h3>Football [Soccer :\]</h3>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="the-inquisitive-div">
+      <a href="https://salty-fortress-40086.herokuapp.com/" target="_blank"><img class="mb-4 the-inquisitive" src="images/Logo.gif" alt="" width="72" height="57"></a>
+    </div>
+
+    <a class="btn IJ" href="https://stormy-waters-89239.herokuapp.com/" target="_blank"><i class="fas fa-sign-in-alt fa-1x"></i> THE INQUISITIVE JOURNAL</a>
+    <!-- https://inquisitive-blogger.herokuapp.com/ -->
+    <div class="contact-me">
+      <a class="btnn" href="mailto:meenaankit393@gmail.com"> <img class="contact_image" src="images/contact.jpeg" alt="contact image">
+      </a>
+      <!-- <img class="contact_image" src="images/contact.jpeg" alt="contact image"> -->
+      <h2>Get in Touch</h2>
+      <h3>( especially if you're a SH fan :p )</h3>
+      <p class="contact_message">If you want to discuss football or talk about astronomy or just fancy saying hey, then do consider getting in touch.</p>
+      <a class="btn magic" href="mailto:meenaankit393@gmail.com">MESSAGE ME</a>
+    </div>
+  </div>
+  <br>
+  <div class="inp">
+    <div class="search">
+      <a href="https://enigmatic-bayou-29370.herokuapp.com/" id=lnk></a> <br>
+      <input type='text' id='userInput' class='form-control' value='' placeholder="Enter custom Username to get personalized To-Do List" />
+      <input type='button' id='myBtn' class='btn-outline-secondary' onclick='changeText2()' value='Go!' />
+    </div>
+
+
+  </div>
+  <div class="bottom-box">
+
+
+    <script type="text/javascript">
+      function changeText2() {
+        var userInput = document.getElementById('userInput').value;
+        var lnk = document.getElementById('lnk');
+        lnk.href = "https://enigmatic-bayou-29370.herokuapp.com/" + userInput;
+        // window.location = "https://enigmatic-bayou-29370.herokuapp.com/" + userInput;
+        window.open("https://enigmatic-bayou-29370.herokuapp.com/" + userInput,
+          '_blank');
+      }
+
+      var input = document.getElementById("userInput");
+      input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("myBtn").click();
+        }
+      });
+    </script>
+    <a class="footer-link l" href="https://www.linkedin.com/in/ankit-meena-007
 " target="_blank"><i class="fab fa-linkedin fa-1x"></i> LinkedIn</a>
-      <a class="footer-link t" href="https://twitter.com/ankit_d_meena" target="_blank"><i class="fab fa-twitter fa-1x"></i> Twitter</a>
-      <a class="footer-link w" href="https://ankitmeena007.github.io/About_Me/index.html" target="_blank"><i class="fas fa-paperclip fa-1x"></i> Webpage</a>
-      <a class="footer-link n" href="https://salty-fortress-40086.herokuapp.com/" target="_blank"><i class="fas fa-envelope fa-1x"></i> NewsLetter</a>
+    <a class="footer-link t" href="https://twitter.com/ankit_d_meena" target="_blank"><i class="fab fa-twitter fa-1x"></i> Twitter</a>
+    <a class="footer-link w" href="https://ankitmeena007.github.io/About_Me/index.html" target="_blank"><i class="fas fa-paperclip fa-1x"></i> Webpage</a>
+    <a class="footer-link n" href="https://salty-fortress-40086.herokuapp.com/" target="_blank"><i class="fas fa-envelope fa-1x"></i> NewsLetter</a>
+    <p class="copyright">© 2021 ANKIT MEENA     <a class="backToTop btn magic" href="#TOP"><i class="fas fa-arrow-up fa-1x"></i> Top</a>
+</p>
+  </div>
 
-      <p class="copyright">© 2021 ANKIT MEENA</p>
-    </div>
+</body>
 
-  </body>
 </html>
