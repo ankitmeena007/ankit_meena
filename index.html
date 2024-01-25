@@ -190,7 +190,13 @@
   <br>
   <div class="inp">
     <div class="search">
+
+      <!--
       <a href="https://enigmatic-bayou-29370.herokuapp.com/" id=lnk></a> <br>
+      -->
+      
+      <a href="https://to-do-007.vercel.app/" id=lnk></a> <br> 
+      
       <input type='text' id='userInput' class='form-control' value='' placeholder="Enter custom Username to get personalized To-Do List" />
       <input type='button' id='myBtn' class='btn-outline-secondary' onclick='changeText2()' value='Go!' />
     </div>
@@ -204,9 +210,16 @@
       function changeText2() {
         var userInput = document.getElementById('userInput').value;
         var lnk = document.getElementById('lnk');
-        lnk.href = "https://enigmatic-bayou-29370.herokuapp.com/" + userInput;
+        
+        //lnk.href = "https://enigmatic-bayou-29370.herokuapp.com/" + userInput;
+        lnk.href = "https://to-do-007.vercel.app/" + userInput;
+
+        
         // window.location = "https://enigmatic-bayou-29370.herokuapp.com/" + userInput;
-        window.open("https://enigmatic-bayou-29370.herokuapp.com/" + userInput,
+        
+        //window.open("https://enigmatic-bayou-29370.herokuapp.com/" + userInput,
+          '_blank');
+        window.open("https://to-do-007.vercel.app/" + userInput,
           '_blank');
       }
 
@@ -221,7 +234,7 @@
     <a class="footer-link l" href="https://www.linkedin.com/in/ankit-meena-007
 " target="_blank"><i class="fab fa-linkedin fa-1x"></i> LinkedIn</a>
     <a class="footer-link t" href="https://twitter.com/ankit_d_meena" target="_blank"><i class="fab fa-twitter fa-1x"></i> Twitter</a>
-    <a class="footer-link w" href="https://ankitmeena007.github.io/About_Me/index.html" target="_blank"><i class="fas fa-paperclip fa-1x"></i> Webpage</a>
+    <a class="footer-link w" href="https://ankitmeena007.github.io" target="_blank"><i class="fas fa-feather fa-1x"></i> Blog</a>
     <a class="footer-link n" href="https://salty-fortress-40086.herokuapp.com/" target="_blank"><i class="fas fa-envelope fa-1x"></i> NewsLetter</a>
     <p class="copyright">© 2021 ANKIT MEENA     <a class="backToTop btn magic" href="#TOP"><i class="fas fa-arrow-up fa-1x"></i> Top</a>
 </p>
