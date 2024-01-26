@@ -7,8 +7,8 @@
 .box {
   width: 350px;
   height: auto;
-  max-height: 600px;
-  min-height: 350px;
+  max-height: 56.25rem ;
+  min-height: 53.125rem ;
   background: transparent;
   border-radius: 20px;
   position: absolute;
@@ -22,7 +22,7 @@
   padding: 15px 25px 25px;
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 40%;
   transform: translate(-50%, -30%);
 }
 .box .box__ghost .symbol:nth-child(1) {
@@ -140,7 +140,7 @@
 }
 .box .box__ghost .box__ghost-container .box__ghost-eyes {
   position: absolute;
-  left: 50%;
+  left: 20%;
   top: 45%;
   height: 12px;
   width: 70px;
@@ -683,10 +683,12 @@ margin:0;
   }
   .box{
     /* display: none; */
-    left:0;
-    top:0;
+    left:-15px;
+    top:-150px;
     transform: translate(-12%,0);
   }
+
+  
   /* .top-box{
     height:100vh;
   } */
