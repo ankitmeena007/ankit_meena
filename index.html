@@ -43,17 +43,20 @@
     $(document).mousemove(function(event) {
       //verticalAxis
       mouseY = event.pageY;
-      yAxis = ((pageY / 2 - mouseY) / pageY) * 300;
+      yAxis = ((pageY  - mouseY) / pageY) * 300;
       //horizontalAxis
       mouseX = event.pageX / -pageX;
       xAxis = -mouseX * 100 - 100;
 
       $(".box__ghost-eyes").css({
-        transform: "translate(" + xAxis + "%,-" + yAxis + "%)"
+        transform: "translate(" + xAxis/3 + "%,-" + yAxis/1.8 + "%)"
       });
 
       //console.log('X: ' + xAxis);
     });
+
+
+
   </script>
 
 
@@ -61,9 +64,9 @@
   <div id=TOP class="top-box">
 
 
-        <div class="box" onclick="location.href='https://ankitmeena007.github.io/ankit_meena/';">
+        <div class="box" >
 
-          <div class="box__ghost">
+          <div class="box__ghost" onclick="location.href='https://ankitmeena007.github.io/ankit_meena/';">
             <div class="symbol"></div>
             <div class="symbol"></div>
             <div class="symbol"></div>
