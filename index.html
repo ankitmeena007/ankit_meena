@@ -303,18 +303,7 @@
     );
 
 </script>
-<script>
-// default mode for small devices having system theme as dark
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-  const screenQuery = window.matchMedia("(max-width: 600px)");
-  
-  if (prefersDarkScheme.matches && screenQuery.matches) {
-  document.getElementsByTagName("BODY")[0].setAttribute("light-mode", "dark2");
-  
-  } 
-  // default mode for small devices having system theme as dark
-
-  
+<script>  
   var app = document.getElementsByTagName("BODY")[0];
   if (localStorage.lightMode == "dark2") {
       app.setAttribute("light-mode", "dark2");
@@ -329,6 +318,9 @@
 <!-- dark mode -->
 
 
+
+
+  
 
 
   
