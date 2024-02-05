@@ -775,3 +775,206 @@ margin:0;
   background: transparent;
   border-color: transparent;
 }
+
+
+
+
+
+/* dark mode */
+body[light-mode="dark"] {
+  color:lightslategray;
+  background-color: #23252f;
+}
+
+body[light-mode="dark"] .the-inquisitive-div{
+  background-color: #23252f;
+}
+
+body[light-mode="dark"] .top-box{
+  background-color:#23252f;
+}
+
+body[light-mode="dark"] input[type="text"], textarea {
+  color: #39A9CB;
+  background-color :#23252f ; 
+  
+}
+
+body[light-mode="dark"] .bottom-box{
+  background-color:#23252f ; 
+  
+}
+
+body[light-mode="dark"] .mountain_img {
+  visibility:hidden;
+} 
+
+body[light-mode="dark"] .top_cloud {
+  visibility:hidden;
+} 
+
+body[light-mode="dark"] .bottom_cloud_1 {
+  visibility:hidden;
+} 
+
+body[light-mode="dark"] .bottom_cloud_2 {
+  visibility:hidden;
+} 
+
+body[light-mode="dark"] .magic {
+  border-color: #39A9CB;
+  background: transparent;
+  /* background:dimgrey; */
+}
+
+body[light-mode="dark"] .IJ {
+  border-color: #39A9CB;
+  background: transparent;
+  /* background:dimgrey; */
+}
+
+body[light-mode="dark"] .btn {
+  color: white;
+}
+
+
+
+
+
+
+/* dark mode 2*/
+body[light-mode="dark2"] {
+  color: #ced4e2;
+  background-color: #141516;
+}
+
+body[light-mode="dark2"] .the-inquisitive-div{
+  background-color: #141516;
+}
+
+body[light-mode="dark2"] .top-box{
+  background-color: #141516;
+}
+
+body[light-mode="dark2"] input[type="text"], textarea {
+  color: #39A9CB;
+  background-color : #141516 ; 
+  
+}
+
+body[light-mode="dark2"] .bottom-box{
+  background-color: #141516 ; 
+  
+}
+
+body[light-mode="dark2"] .mountain_img {
+  visibility:hidden;
+} 
+
+body[light-mode="dark2"] .top_cloud {
+  visibility:hidden;
+} 
+
+body[light-mode="dark2"] .bottom_cloud_1 {
+  visibility:hidden;
+} 
+
+body[light-mode="dark2"] .bottom_cloud_2 {
+  visibility:hidden;
+} 
+
+body[light-mode="dark2"] .magic {
+  border-color: #39A9CB;
+  background: transparent;
+  /* background:dimgrey; */
+}
+
+body[light-mode="dark2"] .IJ {
+  border-color: #39A9CB;
+  background: transparent;
+  /* background:dimgrey; */
+}
+
+body[light-mode="dark2"] .btn {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Light Mode Button Styles
+--------------------------- */
+
+.light-mode-button {
+  background: 0;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin-top: 20px;
+
+  /* Fixed position */
+  position: fixed;
+  top:16px;
+  right:16px;
+}
+
+.light-mode-button:focus {
+  outline: none; /* Not ideal for accessibility */
+}
+
+.light-mode-button span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #d6d7db;
+  box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+.light-mode-button span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+  transition: 0.3s;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+
+/* alternate dark theme */
+body[light-mode="dark2"] .light-mode-button span:nth-child(1) {
+  background-color: #ced4e2;
+  color: #141516;
+}
+
+body[light-mode="dark2"] .light-mode-button span:nth-child(2) {
+  left: 65px;
+  background-color: #141516;
+}
+
