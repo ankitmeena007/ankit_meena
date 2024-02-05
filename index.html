@@ -265,6 +265,62 @@
 </p>
   </div>
 
+
+
+
+
+  
+
+  
+  <!-- dark mode -->
+<script>
+    // function darkMode() {
+    //     var element = document.body;
+    //     element.classList.toggle("dark-mode");
+    // }
+
+    function toggle_light_mode() {
+      var app = document.getElementsByTagName("BODY")[0];
+      if (localStorage.lightMode == "dark2") {
+          localStorage.lightMode = "light";
+          app.setAttribute("light-mode", "light");
+      } else {
+          localStorage.lightMode = "dark2";
+          app.setAttribute("light-mode", "dark2");
+      }
+}
+
+    window.addEventListener(
+        "storage",
+        function () {
+            if (localStorage.lightMode == "dark2") {
+                app.setAttribute("light-mode", "dark2");
+            } else {
+                app.setAttribute("light-mode", "light");
+            }
+        },
+        false
+    );
+
+</script>
+<script>
+  var app = document.getElementsByTagName("BODY")[0];
+  if (localStorage.lightMode == "dark2") {
+      app.setAttribute("light-mode", "dark2");
+  }
+</script>
+
+<button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+  <span></span>
+  <span></span>
+</button>
+
+<!-- dark mode -->
+
+
+
+
+  
 </body>
 
 </html>
