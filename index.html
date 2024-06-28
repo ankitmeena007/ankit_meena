@@ -293,10 +293,10 @@
     window.addEventListener(
         "storage",
         function () {
-            if (localStorage.lightMode == "light") {
-                app.setAttribute("light-mode", "light");
-            } else {
+            if (localStorage.lightMode == "dark2") {
                 app.setAttribute("light-mode", "dark2");
+            } else {
+                app.setAttribute("light-mode", "light");
             }
         },
         false
